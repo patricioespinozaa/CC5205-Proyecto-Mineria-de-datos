@@ -1,1 +1,1 @@
-# CC5205---Proyecto-Miner-a-de-datos
+# CC5205 - Proyecto-Mineria de datos
