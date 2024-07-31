@@ -74,11 +74,10 @@ Los atributos utilizados en las matrices de correlación (danceability, energy, 
 > El modelo base tuvo un desempeño de 0.52 en precision (macro avg) y 0.58 en accuracy. Mientras que al utilizar GridSearch se obtuvo 0.62 en precision (macro avg) y 0.64 en accuracy, mejorando en comparación al modelo base con los hiperparámetros C = 10, gamma = 0.1 y kernel = rbf y una Cross Validation=5.
 <br> <br>
 > **Gradient Boost Model**: <br>
-> El modelo base tuvo un desempeño de 0.52 en precision (macro avg) y 0.58 en accuracy. Mientras que al utilizar GridSearch se obtuvo 0.59 en precision (macro avg) y 0.64 en accuracy, mejorando en comparación al modelo base con los hiperparámetros max_depth=8 y n_estimators=100, utilizando una Cross Validation=3.
-<br>
+> El modelo base tuvo un desempeño de 0.52 en precision (macro avg) y 0.58 en accuracy. Mientras que al utilizar GridSearch se obtuvo 0.59 en precision (macro avg) y 0.64 en accuracy, mejorando en comparación al modelo base con los hiperparámetros max_depth=8 y n_estimators=100, utilizando una Cross Validation=3. <br>
 >Posteriormente se entreno con una Cross Validation de 5 y learning rate de 0.3, obteniendo 0.59 en precision (macro avg) y 0.63 en accuracy, no mejorando así al incrementar la Cross Validation y el learning rate.
 <br> <br>
-**Bayes Model**: <br>
+> **Bayes Model**: <br>
 > El modelo base tuvo un desempeño de 0.41 en precision (macro avg) y 0.35 en accuracy. Mientras que al utilizar GridSearch se obtuvo 0.55 en precision (macro avg) y 0.56 en accuracy. Mejorando en comparación al modelo base con los parámetros de var_smoothing=0.284 y Cross Validation = 5.
 
 > Como acotación, en las matrices de confusión obtenidas a partir de los resultados de cada modelo, se observa que la etiqueta emo es la que presenta métricas más bajas, lo que nos indica que el género es difícil de predecir en base a sus atributos musicales. Esto significa que en sus datos no existen caracteristicas musicales particulares que esten relacionadas entre si para darle una caracterización unica a esta clase por sobre las demás. En particular para el género emo, la letra de la canción es muy relevante, lo que podría permitir esta distinción en caso de poder trabajar directamente con ella.
